@@ -1,0 +1,4 @@
+interface:
+  display_name: "Requirements Brainstorming"
+  short_description: "Clarify users, journeys, scope and acceptance"
+  default_prompt: "Use $product-ux:requirements-brainstorming to turn this idea into a clear brief."

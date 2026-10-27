@@ -1,0 +1,21 @@
+{
+  "name": "product-ux",
+  "version": "0.1.0",
+  "description": "Requirements brainstorming, Superdesign UX review, maintainable sites and Cloudflare publishing.",
+  "author": {
+    "name": "moon-research"
+  },
+  "repository": "https://github.com/moon-research/product-ux-plugin",
+  "homepage": "https://github.com/moon-research/product-ux-plugin",
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Product UX",
+    "shortDescription": "From product requirements to reviewed UX and published sites",
+    "category": "Developer Tools",
+    "defaultPrompt": [
+      "Help turn this product brief into a reviewed landing page.",
+      "Refine the next section without rewriting the accepted design."
+    ]
+  }
+}

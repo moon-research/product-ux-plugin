@@ -1,0 +1,4 @@
+interface:
+  display_name: "Publishing Sites"
+  short_description: "Release reviewed sites through Cloudflare Pages"
+  default_prompt: "Use $product-ux:publishing-sites to prepare and verify this Cloudflare release."

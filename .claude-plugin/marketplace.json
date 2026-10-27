@@ -1,0 +1,14 @@
+{
+  "name": "moon-research-product-ux",
+  "owner": {
+    "name": "moon-research"
+  },
+  "plugins": [
+    {
+      "name": "product-ux",
+      "source": "./",
+      "description": "Requirements brainstorming, Superdesign UX review, maintainable sites and Cloudflare publishing."
+    }
+  ],
+  "description": "Standalone requirements, UX, site-building and publishing workflows."
+}
