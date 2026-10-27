@@ -97,3 +97,9 @@ Superdesign authentication/generation and Cloudflare account/deployment operatio
 Native CLI install/discovery and an actual router task were exercised in both hosts. Other desktop UI versions and approval/listing by public plugin directories were not tested or claimed. The bundled package has no MCP server, runtime hooks, automatic installs or persistent background service.
 
 Source, tests, install/contribution instructions, attribution and evidence are versioned with this repository; release archive generation is explicit and excludes development/planning material. `setup-ux.sh` remains unchanged from the initial repository commit and was never executed.
+
+## Git delivery and retained artifact
+
+Implemented source is committed on `feat/standalone-product-ux` (implementation commit `afff61e`) and pushed to the supplied repository. Review: https://github.com/moon-research/product-ux-plugin/pull/1 . The PR is open; default `main` and public directory/release listings are not changed by this delivery. Use the local checkout while reviewing, or merge the PR before following README's default-ref GitHub install commands.
+
+The exact checked ZIP is retained locally at `dist/product-ux-0.1.0.zip` (ignored generated output) with the checksum above. It can be rebuilt from the checkout with the documented explicit package command. The host-test and operator-path temporary directories were removed after preserving this archive and the evidence in this repository. New Product UX test installations/configuration were cleaned up; other plugin configuration was preserved.
