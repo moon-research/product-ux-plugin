@@ -13,6 +13,8 @@ Continue from the current brief and accepted work. Read project instructions and
 | Visual alternatives, flows or selected component refinement | [ux-brainstorming](../ux-brainstorming/SKILL.md) |
 | Implement accepted components, maintain templates or publishable content | [building-sites](../building-sites/SKILL.md) |
 | Working-site preview, production release or published-link checks | [publishing-sites](../publishing-sites/SKILL.md) |
+| Several enterable Claude rooms with dependency and handoff coordination | [orchestrator](../orchestrator/SKILL.md) |
+| Reusable workflow failures or accumulated plugin feedback | [self-improvement](../self-improvement/SKILL.md) |
 
 Read only the relevant skill and its needed references. When the host supports skill invocation, use its installed name; otherwise read the linked file directly. The shared package works without Superdev, a Product Graph room graph or a specific model.
 

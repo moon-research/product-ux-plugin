@@ -47,6 +47,10 @@ The package supplies a portable root manifest and Claude/Codex compatibility man
 | [ux-brainstorming](skills/ux-brainstorming/SKILL.md) | Superdesign visual alternatives and component-level refinement. |
 | [building-sites](skills/building-sites/SKILL.md) | Accepted designs, templates, landing pages and Markdown blogs. |
 | [publishing-sites](skills/publishing-sites/SKILL.md) | Cloudflare review deployments, authorized production releases and rollback. |
+| [orchestrator](skills/orchestrator/SKILL.md) | Coordinate persistent, enterable Claude rooms and their dependencies. |
+| [self-improvement](skills/self-improvement/SKILL.md) | Diagnose workflow failures, fix the source and verify versioned updates. |
+
+For coordinated work, use `orchestrator` to charter requirements, UX and build/review rooms with isolated write ownership and concrete handoffs. Rooms use the installed Claude Code CLI, including when the leader is Codex. There is no separate worker broker or service. See [room mechanics](skills/orchestrator/references/claude-rooms.md) for launch, messaging, attach and same-session recovery. Single tasks can still use a skill directly.
 
 Typical progression: brief/research → requirements → Superdesign review → accepted components → assembled implementation → Cloudflare preview → production. Enter where useful; a small correction does not restart the entire workflow.
 
@@ -83,22 +87,22 @@ python3 -m unittest discover -s tests -v
 claude plugin validate .
 ```
 
-The validator checks this package's supported scalar frontmatter, matching metadata, contained references and archive inputs; it is not a general Agent Plugins/YAML schema validator. Host-native validation/discovery complements it. Utility tests run in disposable directories. Behavioral scenarios are in `tests/scenarios.json`; execute changed workflows in a fresh context and record outcomes/limits in `docs/verification.md`.
+The validator checks this package's supported scalar frontmatter, matching metadata, contained references and archive inputs; it is not a general Agent Plugins/YAML schema validator. Host-native validation/discovery complements it. Utility tests run in disposable directories. Behavioral scenarios are in `tests/scenarios.json`; execute changed workflows in a fresh context and record outcomes/limits in `docs/verification.md` and the version-specific verification note.
 
 For a release, update the version in all three manifests, run the checks and native discovery tests, then create a new archive without overwriting existing output:
 
 ```sh
-python3 scripts/package.py --output /tmp/product-ux-0.1.0.zip
+python3 scripts/package.py --output /tmp/product-ux-0.2.0.zip
 ```
 
 The ZIP contains only manifests/catalogs, shared skills, this README, LICENSE and NOTICE. Repository setup, tests, planning records, environment files and Git data are excluded; local environment/Git/cache artifacts nested inside `skills/` cause validation to fail. Development utilities are used from a checkout, not from that runtime ZIP. The existing `setup-ux.sh` is an optional machine-bootstrap script, preserved separately; never run it as a plugin install or validation step.
 
 Commit/push reviewed source to the repository. Catalog installs follow their configured Git ref; update the installed plugin through the host's update/refresh mechanism and start a new session. A GitHub release/archive is separate from acceptance into a public host directory; do not describe a repository push as directory approval.
 
-Keep site-specific evidence local. Propose reusable lessons here with source evidence, then link the adopted plugin change back to the originating project. Do not edit installed cache copies as the maintained source.
+Keep site-specific evidence local. Use [self-improvement](skills/self-improvement/SKILL.md) for a reusable correction: diagnose the actual input/return boundary, make the smallest authorized source fix, update the version and release notes, verify the affected scenario and confirm the installed snapshot/reload state. Link the adopted plugin change back to the originating project. Do not edit installed cache copies as the maintained source.
 
 ## Sources
 
-Requirements exploration adapts the Superdev/Superpowers approach; retained attribution is in NOTICE. Site delivery generalizes the AppFX collaboration and Product Graph site playbook.
+Requirements exploration, orchestration and self-improvement adapt the Superdev/Superpowers approach; retained attribution is in NOTICE. Site delivery generalizes the AppFX collaboration and Product Graph site playbook.
 
 Host references: [OpenAI plugin packaging](https://developers.openai.com/plugins/build/plugins), [Claude plugin manifests](https://code.claude.com/docs/en/plugins-reference), [Claude marketplaces](https://code.claude.com/docs/en/plugin-marketplaces). See the integration references for provider documentation and current-command checks.

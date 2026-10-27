@@ -1,7 +1,7 @@
 {
   "name": "product-ux",
-  "version": "0.1.0",
-  "description": "Requirements brainstorming, Superdesign UX review, maintainable sites and Cloudflare publishing.",
+  "version": "0.2.0",
+  "description": "Requirements, Superdesign UX review, Claude room orchestration, site publishing and evidence-based workflow improvement.",
   "author": {
     "name": "moon-research"
   },

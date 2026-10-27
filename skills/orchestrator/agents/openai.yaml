@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product UX Orchestrator"
+  short_description: "Coordinate persistent and enterable Claude rooms"
+  default_prompt: "Use $product-ux:orchestrator to coordinate these requirements, UX and build rooms."

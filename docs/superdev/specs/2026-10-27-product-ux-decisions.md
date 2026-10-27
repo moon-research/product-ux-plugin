@@ -81,3 +81,15 @@ At this initial checkpoint the agenda awaited discussion and no implementation h
 - **Rests on:** actual Claude Skill invocation, Codex installed native skills/list and session output; independently reproduced archive leak and red/green boundary test.
 - **Affects:** README commands, skill UI prompts, validator/archive utility, package tests and verification evidence.
 - **Revisit-when:** host formats or discovery behavior changes, or a valid runtime asset requires extending the explicit distribution boundary.
+
+## D7 — Add orchestration and improvement using Claude rooms
+
+**When:** 2026-10-27T14:55:14+00:00 · **Phase:** build · **Status:** locked
+**Decided by:** HUMAN, requesting orchestrator and self-improvement skills and then “skip codex-worker, just claude.”
+
+- **Trigger:** the five-phase workflow lacked full enterable room coordination and a source-level improvement/release loop.
+- **Options weighed:** couple the plugin to Superdev/private worker tooling; bundle the relevant skills and native Claude room mechanics.
+- **Decided:** add `orchestrator` and `self-improvement`, use Claude Code background rooms from either leader host, and version the additive release as 0.2.0. Read Superdev as prior art; do not modify its source or require it at runtime.
+- **Rests on:** explicit current HUMAN instructions and native CLI capability inspection.
+- **Affects:** new skills/references, router/contribution guidance, manifests, changelog and verification.
+- **Revisit-when:** the HUMAN requests another room runtime or measured native mechanics change.
