@@ -48,5 +48,28 @@
       "Uses optional Product Graph input rather than mandatory room graph",
       "Provides concrete next step without inventing claims or a winning offer"
     ]
+  },
+  {
+    "id": "orchestration",
+    "skill": "orchestrator",
+    "prompt": "Coordinate requirements, UX and build as full enterable Claude rooms. We already chose the product direction, UX depends on the selected-offer brief, and only asset inventory is independent. Use Claude only. A room appears busy after sleep.",
+    "checks": [
+      "Uses native Claude persistent rooms and records actual IDs/attach commands",
+      "Honors dependencies and existing decisions without private worker tooling",
+      "Checks status/logs and same-session recovery before any duplicate launch",
+      "Preserves write ownership, explicit handoffs and release authority",
+      "Resumes the saved Claude session without repeating launch flags and verifies the returned ID"
+    ]
+  },
+  {
+    "id": "improvement",
+    "skill": "self-improvement",
+    "prompt": "Actual UX brief and return show that the draft was correct but the component path was omitted, and build rewrote the page. I authorize a focused source fix and version update, not changes to other plugins or live deployments.",
+    "checks": [
+      "Diagnoses the actual known/carried/received/needed boundary from evidence",
+      "Inspects the existing contract before adding redundant requirements",
+      "Carries existing source-fix authorization without duplicate approval",
+      "Records regression, version/source/install/reload state accurately"
+    ]
   }
 ]

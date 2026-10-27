@@ -1,7 +1,7 @@
 Product UX bundles independently usable requirements, UX and site-delivery workflows.
 
-Requirements-brainstorming guidance is adapted from the Superdev/Superpowers
-brainstorming approach. Superdev is an evolved fork at
+Requirements-brainstorming, orchestration and self-improvement guidance is
+adapted from the Superdev/Superpowers approach. Superdev is an evolved fork at
 https://github.com/TadasValaitiz/superdev; Superpowers is at
 https://github.com/obra/superpowers. No Superdev runtime is required.
 

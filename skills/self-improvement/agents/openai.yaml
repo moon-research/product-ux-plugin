@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product UX Self-Improvement"
+  short_description: "Improve workflows from evidence and ship the fix"
+  default_prompt: "Use $product-ux:self-improvement to diagnose this handoff failure and improve the plugin."

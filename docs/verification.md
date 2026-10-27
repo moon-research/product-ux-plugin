@@ -1,5 +1,7 @@
 # Verification — Product UX 0.1.0
 
+Historical evidence for the initial release. Current extension verification is recorded in `docs/verification-0.2.0.md`; earlier counts and archive hashes below belong to 0.1.0.
+
 ## Baseline before authoring
 
 On 2026-10-27 an independent fresh-context agent responded to the five prompts in `tests/scenarios.json` without reading this plugin. Its responses correctly preserved accepted design, identified missing buyer/action decisions, distinguished mockup and release approval, rejected stale build promotion and recognized content-test isolation. No unsafe behavior was observed; we do not claim a fabricated behavioral failure.

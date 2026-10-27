@@ -19,3 +19,5 @@ When a lesson is reusable, propose the smallest correction in the Product UX rep
 Local branding, account IDs, copy and domain facts remain local. No new lesson is a valid outcome; do not invent process rules for each routine contribution. Updating a shared guide is not permission to change or redeploy unrelated sites.
 
 Example: a site's build silently inlined a consent script blocked by CSP. The local record names the observed failure, the correction and browser check; a reusable note belongs in the Analytics/build reference. A particular measurement ID does not.
+
+For multi-room work, use [orchestrator](../../orchestrator/SKILL.md) to record actual session/workspace ownership and input/output contracts. Use [self-improvement](../../self-improvement/SKILL.md) when local evidence warrants a reusable correction and a verified installed update. These are optional extensions; ordinary contribution work does not require starting rooms.
