@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product UX"
+  short_description: "Plan, review, build and publish product UX"
+  default_prompt: "Use $product-ux:product-ux to move this product brief toward a reviewed site."

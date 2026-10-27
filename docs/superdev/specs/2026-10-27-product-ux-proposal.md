@@ -1,6 +1,6 @@
 # Product UX plugin — proposed v1
 
-Status: discussion proposal; repository and destinations are confirmed, skill boundaries remain proposed. See [decision log](2026-10-27-product-ux-decisions.md) and [source census](2026-10-27-product-ux-census.md).
+Status: approved for implementation by the HUMAN on 2026-10-27 (D4); five skill boundaries implemented. See [decision log](2026-10-27-product-ux-decisions.md) and [source census](2026-10-27-product-ux-census.md).
 
 ## Purpose
 
@@ -16,7 +16,7 @@ A standalone installable plugin in `moon-research/product-ux-plugin`, locally `~
 | `building-sites` | Translate accepted design into maintainable page/layout/component code; assemble accepted components and validate the working page. | Reviewable implementation with contribution breadcrumbs. |
 | `publishing-sites` | Prepare a Cloudflare review deployment and, once authorized, promote the reviewed source to production with checks and recovery evidence. | Working review/live URLs, release receipt and rollback target. |
 
-The skill names and split are proposals. The requirements and UX skills are independently invokable; they do not force a full journey on a small change.
+The skill names and split were approved through D4. The requirements and UX skills are independently invokable; they do not force a full journey on a small change.
 
 ## Flow and review boundaries
 
@@ -46,10 +46,10 @@ Bundle the requirements workflow and references it needs, retaining appropriate 
 
 Keep skill bodies portable across Claude Code and Codex, with thin runtime/package discovery where needed. Start with the repository's plugin manifest, the five proposed skill folders and only the references needed by those skills. Avoid adding an application backend, orchestration framework, deterministic design registry or broad automation platform as part of extraction.
 
-## Proposed discussion agenda
+## Agreed scope boundaries
 
 1. **Standalone boundary:** confirm the bundled workflow with optional Product Graph inputs and explicit Superdesign/Cloudflare integrations.
 2. **Review progression:** confirm requirements, separate visual UX work and optional component-by-component refinement before assembly.
 3. **Publishing boundary:** Superdesign for design review is confirmed; Cloudflare review and production remain separate site releases with recorded authority.
 
-No plugin implementation, marketplace publication or site deployment has occurred. The proposal does not authorize new account/domain changes.
+Implementation is recorded in the plan and verification report. This scope does not authorize provider account/domain changes, a customer-site release or submission to a public host directory.

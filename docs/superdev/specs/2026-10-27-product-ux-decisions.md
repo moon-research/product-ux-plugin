@@ -26,13 +26,13 @@ Authority: current HUMAN instructions govern. This log records confirmed choices
 - **Affects:** proposed skill boundaries and Product Graph/design/publishing integration points.
 - **Revisit-when:** scope is refined during this brainstorm.
 
-## Pending agenda — proposed, awaiting discussion
+## Initial agenda — historical; superseded by D3–D4
 
 1. Standalone boundary: which reusable behavior ships with the plugin, and which integrations stay optional?
 2. Review progression: what moves from requirements to visual UX, component acceptance and an assembled page?
 3. Publishing boundary: where review artifacts are shown, and how reviewed source becomes an authorized Cloudflare release?
 
-The agenda may be amended by the HUMAN. No plugin implementation or external publication has occurred.
+At this initial checkpoint the agenda awaited discussion and no implementation had occurred. D3–D4 subsequently settled the destination and approved implementation; the plan and verification report record completion.
 
 ## D3 — Superdesign is the design-review destination
 
@@ -45,3 +45,39 @@ The agenda may be amended by the HUMAN. No plugin implementation or external pub
 - **Rests on:** HUMAN's answer to the clarification question in this session.
 - **Affects:** UX brainstorming, review artifacts, design-to-code correspondence and site-release handoff.
 - **Revisit-when:** the HUMAN requests another review destination.
+
+## D4 — Approved implementation and dual-host support
+
+**When:** 2026-10-27T10:04:32+00:00 · **Phase:** build · **Status:** locked
+**Decided by:** HUMAN: “ok work on it, make sure it could be used by Claude and Codex as plugin, use that repo.”
+
+- **Trigger:** proposed scope and five skill boundaries required an implementation decision.
+- **Options weighed:** leave the proposal for discussion; implement the shared workflow as a separately installable plugin.
+- **Decided:** implement the proposal in this repository for Claude Code and Codex. Use one shared skills tree, a portable root manifest and thin host manifests/catalogs. Preserve setup-ux.sh.
+- **Rests on:** explicit HUMAN instruction and D1–D3.
+- **Affects:** all five skills, packaging, installation tests and release documentation.
+- **Revisit-when:** either host's actual discovery requires a different compatibility wrapper.
+
+## D5 — Landing-page capability and bounded integration work
+
+**When:** 2026-10-27T10:04:32+00:00 · **Phase:** build · **Status:** provisional (author assumption, stated to HUMAN)
+**Decided by:** author, continuing the approved scope with the reusable-capability interpretation.
+
+- **Trigger:** no product-specific brief was supplied for an actual new landing page.
+- **Options weighed:** invent and publish a Product Graph page; provide the reusable research-to-landing-page capability and examples.
+- **Decided:** implement the reusable capability. Provider integrations are documented and tested for package behavior; creating paid design drafts, provisioning accounts and deploying live sites are outside this plugin test.
+- **Rests on:** approved standalone product request, available site workflow and missing page brief.
+- **Affects:** Product Graph reference, examples and verification limits.
+- **Revisit-when:** HUMAN requests an actual page with its product brief.
+
+## D6 — Native host verification and packaging boundary
+
+**When:** 2026-10-27T10:19:18+00:00 · **Phase:** build · **Status:** locked (implementation detail)
+**Decided by:** author from actual host checks and independent review.
+
+- **Trigger:** a Codex session with `--ignore-user-config` did not expose the plugin even when catalog discovery worked; package review found nested local artifacts could ship.
+- **Options weighed:** treat file-reading as proof of native loading and ignore nested artifacts; exercise an actual installed plugin in a normal native session and make package containment explicit.
+- **Decided:** use real native install/discovery/session receipts, clean only the new Product UX test installation afterward, and retain existing user setup. Reject env/Git/cache/provider-local artifacts under skills; package only the explicit distribution boundary. Use namespaced Codex invocation shown by native skills/list.
+- **Rests on:** actual Claude Skill invocation, Codex installed native skills/list and session output; independently reproduced archive leak and red/green boundary test.
+- **Affects:** README commands, skill UI prompts, validator/archive utility, package tests and verification evidence.
+- **Revisit-when:** host formats or discovery behavior changes, or a valid runtime asset requires extending the explicit distribution boundary.

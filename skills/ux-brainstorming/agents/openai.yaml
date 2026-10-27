@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX Brainstorming"
+  short_description: "Explore and refine designs with Superdesign"
+  default_prompt: "Use $product-ux:ux-brainstorming to review this section component by component."

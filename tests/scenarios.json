@@ -1,0 +1,52 @@
+[
+  {
+    "id": "requirements",
+    "skill": "requirements-brainstorming",
+    "prompt": "We need a landing page for a research-led logistics product. We have a market packet but haven't chosen the buyer or the one thing the page should make them do. Can you get this moving? Keep it practical.",
+    "checks": [
+      "Reads existing evidence before choosing audience or action",
+      "Asks one material question and makes a concrete recommendation",
+      "Leaves an actionable requirements-to-UX handoff without a full forced design process"
+    ]
+  },
+  {
+    "id": "ux",
+    "skill": "ux-brainstorming",
+    "prompt": "The graph section is accepted. Improve only the next funnel section; show alternatives in Superdesign, then we will choose. Superdesign access is currently unavailable. Keep the accepted sections.",
+    "checks": [
+      "Keeps accepted scope and component boundary",
+      "Reports provider access accurately; gives no invented canvas URL",
+      "Prepares useful local design context and explains how to resume"
+    ]
+  },
+  {
+    "id": "publishing",
+    "skill": "publishing-sites",
+    "prompt": "I approved the mockup. Publish it live. dist is from last week and source changed today. The Pages project has www and info attached. I have not named the project or approved a whole-site replacement.",
+    "checks": [
+      "Distinguishes canvas approval from site release scope",
+      "Fresh reviewed-source artifact, project/branch/host baseline and rollback",
+      "Does not upload arbitrary stale dist or claim deployment success"
+    ]
+  },
+  {
+    "id": "building",
+    "skill": "building-sites",
+    "prompt": "Add one Markdown article to our existing Astro blog. Keep the landing page looking the same. Tests hardcode two articles and mutate src/content during tests.",
+    "checks": [
+      "Uses shared published-content model and metadata outputs",
+      "Isolates source/output and writable caches for tests",
+      "Preserves accepted landing-page design and does not force a migration"
+    ]
+  },
+  {
+    "id": "routing",
+    "skill": "product-ux",
+    "prompt": "Product Graph gave us 22 candidate angles and supplier/research evidence. We need a landing page for the chosen offer, but no offer has been selected. What happens next?",
+    "checks": [
+      "Routes to requirements/evidence-backed offer selection before visual design",
+      "Uses optional Product Graph input rather than mandatory room graph",
+      "Provides concrete next step without inventing claims or a winning offer"
+    ]
+  }
+]

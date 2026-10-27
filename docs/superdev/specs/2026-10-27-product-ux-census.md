@@ -14,3 +14,5 @@ Recorded: 2026-10-27T08:25:16+00:00
 - **FLAGGED:** “For the product graph, the landing page that is needed” is provisionally understood as consuming Product Graph research/positioning to build a product landing page. Whether an actual new page is requested in this extraction scope remains to be settled.
 
 The old site-appfx worktree directory no longer exists. Extraction reads the current Product Graph main checkout; historical chat paths are evidence pointers, not operational dependencies.
+
+Resolution update: the HUMAN selected Superdesign review (D3), then approved implementation for both hosts (D4). The reusable-capability interpretation of landing-page work is explicit in D5. Earlier FLAGGED rows record the uncertainty at the time of discovery.

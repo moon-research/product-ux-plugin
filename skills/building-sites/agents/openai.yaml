@@ -1,0 +1,4 @@
+interface:
+  display_name: "Building Sites"
+  short_description: "Implement accepted designs and publishable content"
+  default_prompt: "Use $product-ux:building-sites to assemble the accepted components into this site."
