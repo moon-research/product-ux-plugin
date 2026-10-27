@@ -82,6 +82,6 @@ An earlier unshipped 0.2.0 development ZIP was superseded and removed; the separ
 
 ## Delivery boundaries
 
-Source is delivered on the existing `feat/standalone-product-ux` branch and PR #1. Main/default-ref installs remain pending that PR's merge. The source guides distinguish existing edit authorization, repository review, installed snapshot refresh and running-session reload.
+The initial 0.1.0 PR #1 was already merged at `a026866`. This additive change is delivered from that merged baseline on `feat/claude-room-orchestration` in a follow-up PR. Default-ref installs receive 0.2.0 when that follow-up is merged. The source guides distinguish existing edit authorization, repository review, installed snapshot refresh and running-session reload.
 
 No live customer site, DNS/email, Google account/property, Superdesign draft or Cloudflare deployment was changed. No plugin cache was edited as the maintained source, and no polling service or scheduler was installed. Raw test scratch was retained until the source receipts and reviewed archive were preserved, then removed.

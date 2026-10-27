@@ -93,3 +93,9 @@ At this initial checkpoint the agenda awaited discussion and no implementation h
 - **Rests on:** explicit current HUMAN instructions and native CLI capability inspection.
 - **Affects:** new skills/references, router/contribution guidance, manifests, changelog and verification.
 - **Revisit-when:** the HUMAN requests another room runtime or measured native mechanics change.
+
+## D8 — Follow-up delivery after the first PR merged
+
+**When:** 2026-10-27T15:10:57+00:00 · **Phase:** build · **Status:** locked (delivery detail)
+
+Native GitHub state shows PR #1 merged at the earlier 0.1.0 head. Carry the additive 0.2.0 changes on `feat/claude-room-orchestration` from that merged main baseline and open a follow-up PR; preserve the original PR's description of what it actually merged. This changes no runtime scope or release authority.
