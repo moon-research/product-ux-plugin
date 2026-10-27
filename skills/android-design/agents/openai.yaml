@@ -1,0 +1,4 @@
+interface:
+  display_name: "Android Design"
+  short_description: "Review adaptive Android UI with real capture evidence"
+  default_prompt: "Use $product-ux:android-design to review this Android screen and prepare the device and screenshot workflow."

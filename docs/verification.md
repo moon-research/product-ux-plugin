@@ -1,6 +1,6 @@
 # Verification — Product UX 0.1.0
 
-Historical evidence for the initial release. Current extension verification is recorded in `docs/verification-0.2.0.md`; earlier counts and archive hashes below belong to 0.1.0.
+Historical evidence for the initial release. Current extension verification is recorded in `docs/verification-0.3.0.md`; the Claude-room exercise remains in `docs/verification-0.2.0.md`; earlier counts and archive hashes below belong to 0.1.0.
 
 ## Baseline before authoring
 

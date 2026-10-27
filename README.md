@@ -1,6 +1,6 @@
 # Product UX
 
-A standalone plugin for Claude Code and Codex: clarify product requirements, review UX in Superdesign, refine components, build maintainable sites and publish through Cloudflare Pages.
+A standalone plugin for Claude Code and Codex: clarify product requirements, review UX in Superdesign, refine web and Android components, build maintainable sites and publish through Cloudflare Pages.
 
 One shared `skills/` tree supplies both hosts. Product Graph can supply research and positioning, but neither Product Graph nor Superdev is required. Superdesign and Cloudflare remain separately authenticated services. Installing this skills-only plugin creates no provider accounts, tracking or live website changes.
 
@@ -45,6 +45,7 @@ The package supplies a portable root manifest and Claude/Codex compatibility man
 | [product-ux](skills/product-ux/SKILL.md) | Route or resume a task at the right phase. |
 | [requirements-brainstorming](skills/requirements-brainstorming/SKILL.md) | Audience, problem, offer, scope, journeys and acceptance. |
 | [ux-brainstorming](skills/ux-brainstorming/SKILL.md) | Superdesign visual alternatives and component-level refinement. |
+| [android-design](skills/android-design/SKILL.md) | Adaptive Android UI, emulator/capture workflow and evidence-based designer handoffs. |
 | [building-sites](skills/building-sites/SKILL.md) | Accepted designs, templates, landing pages and Markdown blogs. |
 | [publishing-sites](skills/publishing-sites/SKILL.md) | Cloudflare review deployments, authorized production releases and rollback. |
 | [orchestrator](skills/orchestrator/SKILL.md) | Coordinate persistent, enterable Claude rooms and their dependencies. |
@@ -59,6 +60,7 @@ Example requests:
 - “Use the Product Graph research packet to compare the viable offers and prepare a landing-page brief.”
 - “The graph is accepted. Show alternatives for the funnel section in Superdesign, one component at a time.”
 - “Assemble the approved sections and add a Markdown use-case blog using our existing style.”
+- “Review the Android timer in compact and tablet split windows; prepare the lab request for large text, RTL and keyboard captures.”
 - “Prepare a Cloudflare preview, then publish the reviewed release after its production scope is authorized.”
 
 ## Integrations and boundaries
@@ -66,6 +68,8 @@ Example requests:
 [Product Graph input](skills/requirements-brainstorming/references/product-graph-input.md) translates evidence, angles, business cases, suppliers and logistics into public positioning. The plugin builds from supplied research or an ordinary brief; it contains no private research dataset or preselected customer offer.
 
 [Superdesign](skills/ux-brainstorming/references/superdesign.md) is the design-review destination. Use its available official tooling and actual returned draft links. Missing access is reported; the plugin can prepare context but does not fabricate an uploaded design. Design references are linked to source components through notes and visual review.
+
+[Android design](skills/android-design/SKILL.md) preserves the consuming app's actual toolkit and review destination. Invoke `/product-ux:android-design` in Claude or `$product-ux:android-design` in Codex. It covers current app-window dimensions, logical density, font scaling, insets/keyboard, RTL, real screenshots and build provenance. An installed Android SDK/adb, suitable AVD or device and the app's build prerequisites are needed for execution; the skill installs none of them. If a project assigns captures to a lab, the designer sends a request instead of taking over its devices. Otherwise the authorized operator can follow the inspected CLI/SDK launch and capture recipes. App implementation and Play release remain under the app's own instructions.
 
 [Site/content guidance](skills/building-sites/references/static-sites.md) covers typed templates, Markdown authoring, shared published-content outputs, robots/sitemap/RSS/LLM exports and isolated checks. It preserves an existing stack and offers Astro as a reference when appropriate. It is guidance, not an embedded Astro application or a framework installer.
 
@@ -92,7 +96,7 @@ The validator checks this package's supported scalar frontmatter, matching metad
 For a release, update the version in all three manifests, run the checks and native discovery tests, then create a new archive without overwriting existing output:
 
 ```sh
-python3 scripts/package.py --output /tmp/product-ux-0.2.0.zip
+python3 scripts/package.py --output /tmp/product-ux-0.3.0.zip
 ```
 
 The ZIP contains only manifests/catalogs, shared skills, this README, LICENSE and NOTICE. Repository setup, tests, planning records, environment files and Git data are excluded; local environment/Git/cache artifacts nested inside `skills/` cause validation to fail. Development utilities are used from a checkout, not from that runtime ZIP. The existing `setup-ux.sh` is an optional machine-bootstrap script, preserved separately; never run it as a plugin install or validation step.
@@ -104,5 +108,7 @@ Keep site-specific evidence local. Use [self-improvement](skills/self-improvemen
 ## Sources
 
 Requirements exploration, orchestration and self-improvement adapt the Superdev/Superpowers approach; retained attribution is in NOTICE. Site delivery generalizes the AppFX collaboration and Product Graph site playbook.
+
+The Android workflow generalizes verified practices from Pomodrone's designer/lab and gallery tooling. Device-lab ownership and project-specific values stay in the consuming app. Coordination refinements also draw on room-graph-orchestration; see NOTICE. The scans and verification limits are recorded in `docs/verification-0.3.0.md` in the repository checkout (development notes are not in the runtime ZIP).
 
 Host references: [OpenAI plugin packaging](https://developers.openai.com/plugins/build/plugins), [Claude plugin manifests](https://code.claude.com/docs/en/plugins-reference), [Claude marketplaces](https://code.claude.com/docs/en/plugin-marketplaces). See the integration references for provider documentation and current-command checks.

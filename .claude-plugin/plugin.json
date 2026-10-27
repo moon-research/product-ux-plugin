@@ -1,7 +1,7 @@
 {
   "name": "product-ux",
-  "version": "0.2.0",
-  "description": "Requirements, Superdesign UX review, Claude room orchestration, site publishing and evidence-based workflow improvement.",
+  "version": "0.3.0",
+  "description": "Requirements, Superdesign UX review, Android design, Claude rooms, site publishing and workflow improvement.",
   "author": {
     "name": "moon-research"
   },

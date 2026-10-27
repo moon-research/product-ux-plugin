@@ -1,5 +1,16 @@
 Product UX bundles independently usable requirements, UX and site-delivery workflows.
 
+Android design guidance generalizes practices from moon-research's Pomodrone
+designer/lab collaboration. The app's source, assets, private captures and
+project-specific defaults are not bundled.
+
+Coordination refinements also adapt ideas from
+https://github.com/TadasValaitiz/room-graph-orchestration.
+The following additional upstream notice is retained; the MIT permission and
+warranty terms reproduced below apply to this material as well:
+
+Copyright (c) 2026 Tadas
+
 Requirements-brainstorming, orchestration and self-improvement guidance is
 adapted from the Superdev/Superpowers approach. Superdev is an evolved fork at
 https://github.com/TadasValaitiz/superdev; Superpowers is at

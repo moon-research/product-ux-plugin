@@ -5,7 +5,7 @@ Find the actual Product UX source repository from its manifest/marketplace metad
 1. Make the authorized focused correction and update the affected examples/contributor instructions.
 2. Bump the same version in `plugin.json`, `.claude-plugin/plugin.json` and `.codex-plugin/plugin.json`. Use a patch for a focused correction and a minor version for an additive skill or flow. Update the source repository's release notes/changelog with the evidence and changed boundary. Do not modify the originating project's release/deployment targets as a side effect.
 3. Run the source checkout's documented validation/tests and the affected realistic scenario. Generate a new non-overwriting package if releasing an archive. Preserve the original observation and observed correction; a new instruction alone does not prove behavior improved.
-4. Commit and deliver through the repository's review/release process. Record the source revision and review state. A pushed branch does not automatically update default-ref marketplace installs.
+4. Commit and deliver through the repository's review/release process. Follow the [Git delivery boundary](../../product-ux/references/project-contract.md#after-each-contribution): record actual remote base and full outgoing range before pushing. Record source revision and review state. A pushed branch does not automatically update default-ref marketplace installs.
 5. Refresh the intended host's installation only within the granted install/update scope. Do not update every unrelated marketplace or interrupt active rooms merely to load new instructions.
 
 For Claude Code, the current scoped update form is:

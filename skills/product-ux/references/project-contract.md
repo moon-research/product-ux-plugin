@@ -14,6 +14,8 @@ If this plugin is installed, name its relevant skills in the README. A portable 
 
 Record what changed, why, validation, source/deployment state and remaining uncertainty in the existing local log or handoff. A sentence can be enough. Preserve the distinction between an observed result, owner confirmation and an unverified assumption.
 
+Before Git delivery, record the actual remote review base, full outgoing commit/file range and intended scope. Check the remote rather than trusting a stale tracking ref or the last commit's diff. A small docs commit atop a long unpublished local history would publish that history too. If the range includes unrelated work, keep the contribution on its isolated local branch or prepare it against the authorized published base; do not push the wider history merely to deliver breadcrumbs. Preserve local work and existing remote branches.
+
 When a lesson is reusable, propose the smallest correction in the Product UX repository with the local evidence and affected skill/reference. When it is adopted, link the shared change back to that evidence and the local note to the shared change; apply relevant guidance to the current project. Leave customer secrets and private details out of public examples. Do not edit installed plugin caches as the source of truth.
 
 Local branding, account IDs, copy and domain facts remain local. No new lesson is a valid outcome; do not invent process rules for each routine contribution. Updating a shared guide is not permission to change or redeploy unrelated sites.

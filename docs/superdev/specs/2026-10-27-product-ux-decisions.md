@@ -99,3 +99,19 @@ At this initial checkpoint the agenda awaited discussion and no implementation h
 **When:** 2026-10-27T15:10:57+00:00 · **Phase:** build · **Status:** locked (delivery detail)
 
 Native GitHub state shows PR #1 merged at the earlier 0.1.0 head. Carry the additive 0.2.0 changes on `feat/claude-room-orchestration` from that merged main baseline and open a follow-up PR; preserve the original PR's description of what it actually merged. This changes no runtime scope or release authority.
+
+## D9 — Android designer toolkit and bounded orchestration improvements
+
+**When:** 2026-10-27T16:30:33+00:00 · **Phase:** build · **Status:** locked
+**Decided by:** HUMAN, approving the reframe to scan orchestration and Pomodoro, add an Android design skill and practical emulator/screenshot workflow, and retain project-specific commands locally.
+
+- **Decided:** add `android-design` and focused references, preserve actual UI toolkit and project role ownership, carry only general practices into the standalone package, and make the additive release 0.3.0. Improve existing orchestration only where the scan identified concrete handoff/evidence gaps.
+- **Source boundary:** app implementation/design decisions and user devices remain outside this documentation/toolkit change. Pomodrone-specific paths, package IDs and lab settings stay in its quickstart.
+- **Rests on:** explicit HUMAN approval, read-only app/orchestration scans and current official Android documentation.
+- **Revisit-when:** the HUMAN changes role ownership, app stack, or requests actual app implementation.
+
+## D10 — Preserve the app guide locally and check the full delivery range
+
+**When:** 2026-10-27 · **Phase:** delivery · **Status:** locked (delivery correction)
+
+The app's published master is over 2,000 commits behind its local working checkout. After an attempted documentation push briefly created a branch, remove only that owned ref after SHA verification and keep the committed guide locally; do not publish the unrelated app history. Add the measured lesson to the portable contribution/shipping boundary and a replayable regression. Continue the standalone plugin through its existing PR #2. This is a scope-preserving delivery choice, not a user decision to change app history or design.
