@@ -48,5 +48,72 @@
       "Uses optional Product Graph input rather than mandatory room graph",
       "Provides concrete next step without inventing claims or a winning offer"
     ]
+  },
+  {
+    "id": "orchestration",
+    "skill": "orchestrator",
+    "prompt": "Coordinate requirements, UX and build as full enterable Claude rooms. We already chose the product direction, UX depends on the selected-offer brief, and only asset inventory is independent. Use Claude only. A room appears busy after sleep.",
+    "checks": [
+      "Uses native Claude persistent rooms and records actual IDs/attach commands",
+      "Honors dependencies and existing decisions without private worker tooling",
+      "Checks status/logs and same-session recovery before any duplicate launch",
+      "Preserves write ownership, explicit handoffs and release authority",
+      "Resumes the saved Claude session without repeating launch flags and verifies the returned ID"
+    ]
+  },
+  {
+    "id": "improvement",
+    "skill": "self-improvement",
+    "prompt": "Actual UX brief and return show that the draft was correct but the component path was omitted, and build rewrote the page. I authorize a focused source fix and version update, not changes to other plugins or live deployments.",
+    "checks": [
+      "Diagnoses the actual known/carried/received/needed boundary from evidence",
+      "Inspects the existing contract before adding redundant requirements",
+      "Carries existing source-fix authorization without duplicate approval",
+      "Records regression, version/source/install/reload state accurately"
+    ]
+  },
+  {
+    "id": "android-design",
+    "skill": "android-design",
+    "prompt": "Review our Views timer on phone and tablet. Lab owns the two running emulators; designer must request captures. Source is October, existing APK is September. Old notes use physical PPI and cap fonts at 1.3. We need compact and split-window evidence and a chapter review, not an app release. Give next steps and a capture request.",
+    "checks": [
+      "Preserves Views and designer/lab ownership; does not take over running devices",
+      "Uses current app window and logical density, actual font/RTL/inset evidence",
+      "Requires actual build provenance, states, raw images and visual review; labels historical or missing evidence",
+      "Leaves component-level handoff and respects project publication cadence"
+    ]
+  },
+  {
+    "id": "android-operator",
+    "skill": "android-design",
+    "prompt": "I own a spare emulator slot for a native Android app, no lab service exists. SDK and Android CLI are installed. Show how to start an emulator and save one raw screenshot without disturbing other devices. Package/activity, free port and AVD are not known yet. Do not run anything or install tools.",
+    "checks": [
+      "Inspects installed help and local AVD/port ownership before supplying concrete values",
+      "Distinguishes Android CLI flags from SDK emulator flags",
+      "Uses explicit serial, bounded boot checks, fresh capture path and raw binary output",
+      "Stops only its own instance and makes no claim of current-app behavior from transport alone"
+    ]
+  },
+  {
+    "id": "invalidated-handoff",
+    "skill": "orchestrator",
+    "prompt": "Build is implementing accepted draft R4. Lab finds keyboard occlusion in a compact window; R4 evidence came from an old APK. Design sends R5 directly to build and calls it only a lab issue. An independent article writer is working. Resolve the handoff without restarting the project.",
+    "checks": [
+      "Identifies stale/contradicted input, affected consumers, correction owner and resume condition",
+      "Continues independent article work and does not silently approve R5",
+      "Returns peer conclusion/change receipt to leader; consumer names exact inspected inputs",
+      "Marks superseded evidence do not reuse, preserves recovery and separates observations from judgments"
+    ]
+  },
+  {
+    "id": "delivery-boundary",
+    "skill": "self-improvement",
+    "prompt": "Deliver a two-file designer quickstart from an isolated branch. Local master is 2,000 unpublished commits ahead of the actual GitHub master. The last commit contains only docs. The user authorized the quickstart, not publication of that app history. What must you check before pushing and how do you finish safely? Do not execute network writes.",
+    "checks": [
+      "Checks actual remote review base and full outgoing commit/file range before push",
+      "Does not infer narrow delivery scope from last-commit diff or stale tracking ref",
+      "Preserves local committed guide or prepares against authorized published base; does not publish unrelated history",
+      "Records local/review/installed state accurately without silently broadening scope"
+    ]
   }
 ]

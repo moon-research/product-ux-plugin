@@ -7,8 +7,8 @@
     {
       "name": "product-ux",
       "source": "./",
-      "description": "Requirements brainstorming, Superdesign UX review, maintainable sites and Cloudflare publishing."
+      "description": "Requirements, Superdesign UX review, Android design, Claude rooms, site publishing and workflow improvement."
     }
   ],
-  "description": "Standalone requirements, UX, site-building and publishing workflows."
+  "description": "Standalone requirements, web and Android UX, orchestration and site delivery."
 }

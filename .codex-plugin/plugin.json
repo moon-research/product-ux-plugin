@@ -1,7 +1,7 @@
 {
   "name": "product-ux",
-  "version": "0.1.0",
-  "description": "Requirements brainstorming, Superdesign UX review, maintainable sites and Cloudflare publishing.",
+  "version": "0.3.0",
+  "description": "Requirements, Superdesign UX review, Android design, Claude rooms, site publishing and workflow improvement.",
   "author": {
     "name": "moon-research"
   },
@@ -11,11 +11,12 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Product UX",
-    "shortDescription": "From product requirements to reviewed UX and published sites",
+    "shortDescription": "Product requirements, reviewed web and Android UX, site delivery",
     "category": "Developer Tools",
     "defaultPrompt": [
       "Help turn this product brief into a reviewed landing page.",
-      "Refine the next section without rewriting the accepted design."
+      "Refine the next section without rewriting the accepted design.",
+      "Review an Android screen across app-window sizes with real capture evidence."
     ]
   }
 }

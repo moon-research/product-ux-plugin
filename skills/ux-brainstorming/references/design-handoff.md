@@ -10,8 +10,10 @@ Keep one short design note beside the project brief, or extend an existing desig
 | Accepted direction | Composition, message hierarchy, typography, color, spacing, illustration/asset choice and interaction intent. |
 | Source correspondence | Actual component/layout/style paths after inspecting the implementation. |
 | States | Relevant default, focus, hover, active, loading, empty, error and mobile behavior; mark unused states as inapplicable. |
-| Review status | What was accepted, by whom, what is still provisional and what changed in this iteration. |
+| Review status | Exact accepted revision, by whom, what is still provisional and what changed in this iteration. |
 | Browser checks | What the implemented page must demonstrate; separate these from canvas acceptance. |
+| Native UI evidence, when relevant | Toolkit, source/build identity, real capture paths, window/device configuration, states tested and limitations; use [Android design](../../android-design/SKILL.md). |
+| Consumer receipt | Which revisions/files/states the receiving builder or lab actually inspected, missing mappings and next owner. |
 
 For component-by-component work, maintain a simple section list with accepted/current/pending status and links. Do not add a registry/database or generated ID mapping merely to maintain this list.
 
@@ -29,3 +31,5 @@ Surroundings: accepted graph and strategy sections remain intact
 When assembling, inspect section transitions, navigation, shared typography, repeated assets and responsive flow. An accepted component can still need a local integration correction; explain it and update the affected note without reopening the entire page.
 
 Canvas and source will evolve separately. Skill-guided review keeps them aligned; neither a saved draft ID nor a code export proves implementation parity.
+
+If new evidence contradicts an accepted input, identify affected consumers and hold their dependent work. Route the correction to its decision owner; record the replacement revision and resume check/acceptance. Label superseded evidence **do not reuse** without deleting recovery history. Independent work can continue. A peer's replacement draft alone does not establish acceptance.
